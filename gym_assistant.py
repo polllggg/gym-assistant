@@ -1,6 +1,7 @@
+import os
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # The assistant's personality and knowledge
 system_prompt = """
